@@ -8,3 +8,8 @@ initenv:
 
 rmenv:
 	rm -fr bin lib include local initenv src share ghost build
+
+
+updateenv:
+	bin/pip install -r requirements/base.txt
+	bin/pip install -r requirements/other.txt
